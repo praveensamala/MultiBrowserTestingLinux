@@ -1,2 +1,0 @@
-# MultiBrowserTestingLinux
-MultiBrowserTestingLinux

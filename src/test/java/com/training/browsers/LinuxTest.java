@@ -59,7 +59,7 @@ public class LinuxTest {
 		driver.close();
 	}
 	
-	@Test (enabled = false)
+	@Test (enabled = true)
 	public void loginTest2() {
 		WebDriver driver = new ChromeDriver(chromeoptions);
 		facebookLoginTestChrome(driver);
@@ -73,7 +73,7 @@ public class LinuxTest {
 		driver.close();
 	}
 	
-	@Test (enabled = false)
+	@Test (enabled = true)
 	public void loginTest4() {
 		WebDriver driver = new FirefoxDriver(firefoxoptions);	
 		facebookLoginTestFirefox(driver);

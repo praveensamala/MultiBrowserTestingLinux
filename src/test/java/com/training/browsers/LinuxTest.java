@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxDriverLogLevel;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -45,6 +46,7 @@ public class LinuxTest {
 		
 		FirefoxProfile firefoxprofile = new FirefoxProfile();
 	    firefoxprofile.setPreference("permissions.default.desktop-notification", 1);
+	    firefoxoptions.setLogLevel(FirefoxDriverLogLevel.TRACE);
 	    firefoxcapabilities.setCapability("marionatte", true);
 	    firefoxcapabilities.setCapability(FirefoxDriver.PROFILE, firefoxprofile);
 	    firefoxoptions.merge(firefoxcapabilities);

@@ -40,7 +40,7 @@ public class LinuxTest {
 		prefs.put("profile.default_content_setting_values.notifications", 2); 
 		chromeoptions.setExperimentalOption("prefs", prefs);
 		chromeoptions.addArguments("--no-sandbox");
-		//chromeoptions.addArguments("headless");
+		chromeoptions.addArguments("headless");
 		System.setProperty("webdriver.chrome.driver", "chromedriver");
 		
 		

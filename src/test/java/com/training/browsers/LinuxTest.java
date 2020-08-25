@@ -46,7 +46,7 @@ public class LinuxTest {
 		
 		FirefoxProfile firefoxprofile = new FirefoxProfile();
 	    firefoxprofile.setPreference("permissions.default.desktop-notification", 1);
-	    firefoxoptions.setLogLevel(FirefoxDriverLogLevel.TRACE);
+	    firefoxoptions.setLogLevel(FirefoxDriverLogLevel.DEBUG);
 	    firefoxcapabilities.setCapability("marionatte", true);
 	    firefoxcapabilities.setCapability(FirefoxDriver.PROFILE, firefoxprofile);
 	    firefoxoptions.merge(firefoxcapabilities);

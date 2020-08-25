@@ -36,12 +36,12 @@ public class LinuxTest {
 	@BeforeClass
 	public void beforeClass() {
 		//Below code is disable notifications from chrome browser during the testing
-		Map<String, Object> prefs = new HashMap<String, Object>();
+		/*Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("profile.default_content_setting_values.notifications", 2); 
 		chromeoptions.setExperimentalOption("prefs", prefs);
-		//chromeoptions.addArguments("--no-sandbox");
+		chromeoptions.addArguments("--no-sandbox");
 		chromeoptions.addArguments("headless");
-		System.setProperty("webdriver.chrome.driver", "chromedriver");
+		System.setProperty("webdriver.chrome.driver", "chromedriver");*/
 		
 		
 		FirefoxProfile firefoxprofile = new FirefoxProfile();
@@ -77,9 +77,13 @@ public class LinuxTest {
 	
 	@Test (enabled = true)
 	public void loginTest4() {
-		WebDriver driver = new FirefoxDriver(firefoxoptions);	
+		System.out.println("step1");
+		WebDriver driver = new FirefoxDriver(firefoxoptions);
+		System.out.println("step2");
 		facebookLoginTestFirefox(driver);
+		System.out.println("step3");
 		driver.close();
+		System.out.println("step4");
 	}
 	
 	public static void facebookLoginTestChrome(WebDriver driver) {

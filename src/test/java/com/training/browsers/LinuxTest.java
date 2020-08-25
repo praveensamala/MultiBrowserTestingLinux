@@ -50,7 +50,7 @@ public class LinuxTest {
 	    firefoxcapabilities.setCapability("marionatte", true);
 	    firefoxcapabilities.setCapability(FirefoxDriver.PROFILE, firefoxprofile);
 	    firefoxoptions.merge(firefoxcapabilities);
-		//firefoxoptions.addArguments("headless");
+		firefoxoptions.addArguments("headless");
 		System.setProperty("webdriver.gecko.driver", "geckodriver");
 	}
 	

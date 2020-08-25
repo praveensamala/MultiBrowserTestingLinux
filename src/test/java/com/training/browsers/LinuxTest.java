@@ -43,11 +43,11 @@ public class LinuxTest {
 		System.setProperty("webdriver.chrome.driver", "chromedriver");
 		
 		
-		FirefoxProfile firefoxprofile = new FirefoxProfile();
-	    firefoxprofile.setPreference("permissions.default.desktop-notification", 1);
-	    firefoxcapabilities.setCapability("marionatte", false);
-	    firefoxcapabilities.setCapability(FirefoxDriver.PROFILE, firefoxprofile);
-	    firefoxoptions.merge(firefoxcapabilities);
+		//FirefoxProfile firefoxprofile = new FirefoxProfile();
+	    //firefoxprofile.setPreference("permissions.default.desktop-notification", 1);
+	    //firefoxcapabilities.setCapability("marionatte", true);
+	    //firefoxcapabilities.setCapability(FirefoxDriver.PROFILE, firefoxprofile);
+	    //firefoxoptions.merge(firefoxcapabilities);
 		firefoxoptions.addArguments("headless");
 		System.setProperty("webdriver.gecko.driver",  "geckodriver");
 	}

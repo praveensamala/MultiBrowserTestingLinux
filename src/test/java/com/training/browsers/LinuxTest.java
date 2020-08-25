@@ -52,21 +52,21 @@ public class LinuxTest {
 		System.setProperty("webdriver.gecko.driver",  "geckodriver");
 	}
 	
-	@Test (enabled = true)
+	@Test (enabled = false)
 	public void loginTest1() {
 		WebDriver driver = new ChromeDriver(chromeoptions);
 		facebookLoginTestChrome(driver);
 		driver.close();
 	}
 	
-	@Test (enabled = true)
+	@Test (enabled = false)
 	public void loginTest2() {
 		WebDriver driver = new ChromeDriver(chromeoptions);
 		facebookLoginTestChrome(driver);
 		driver.close();
 	}
 	
-	@Test (enabled = true)
+	@Test (enabled = false)
 	public void loginTest3() {
 		WebDriver driver = new FirefoxDriver(firefoxoptions);	
 		facebookLoginTestFirefox(driver);

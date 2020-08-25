@@ -39,7 +39,7 @@ public class LinuxTest {
 		prefs.put("profile.default_content_setting_values.notifications", 2); 
 		chromeoptions.setExperimentalOption("prefs", prefs);
 		//chromeoptions.addArguments("--no-sandbox");
-		//chromeoptions.addArguments("headless");
+		chromeoptions.addArguments("headless");
 		System.setProperty("webdriver.chrome.driver", "chromedriver");
 		
 		
@@ -59,7 +59,7 @@ public class LinuxTest {
 		driver.close();
 	}
 	
-	@Test (enabled = true)
+	@Test (enabled = false)
 	public void loginTest2() {
 		WebDriver driver = new ChromeDriver(chromeoptions);
 		facebookLoginTestChrome(driver);
@@ -73,7 +73,7 @@ public class LinuxTest {
 		driver.close();
 	}
 	
-	@Test (enabled = true)
+	@Test (enabled = false)
 	public void loginTest4() {
 		WebDriver driver = new FirefoxDriver(firefoxoptions);	
 		facebookLoginTestFirefox(driver);
